@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas prectice</title>
+</head>
+<body>
+    <img src="./shopping-cart-304843_960_720.png" alt="cart" width="240" height="200" id="s">
+    <canvas id="mycanvas" width="300px" height="250px" style="border:1px solid #000;"></canvas>
+    <script>
+        windows.onload=function(){
+        var canvas = document.getElementById("mycanvas");
+        var ctx = canvas.getContext("2d");
+        var img = document.getElementById("s");
+        ctx.drawImage(img,10,10);
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cnavas border color</title>
+    <style>
+        #mycanvas{
+            background-color: rgb(234, 165, 165);
+        }
+    </style>
+</head>
+<body>
+    <canvas id="mycanvas" width="500px" height="350px" style="border:1px solid #000"></canvas>
+    <script>
+        var c =document.getElementById("mycanvas");
+        var ctx = c.getContext("2d");
+        var grd = ctx.createLinearGradient(0,0,170,0);
+        grd.addColorStop(0,"red");
+        grd.addColorStop(0.3,"blue");
+        grd.addColorStop(0.7,"orange");
+        grd.addColorStop(0.9,"grey");
+        grd.addColorStop(1,"white");
+        ctx.strokeStyle= grd;
+        ctx.lineWidth=5
+        ctx.strokeRect(20,20,150,100);
+    </script>
+</body>
+</html>
