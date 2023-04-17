@@ -14,10 +14,12 @@
     <script>
         var c =document.getElementById("mycanvas");
         var ctx = c.getContext("2d");
-        ctx.shadowBlur=-10;
-        ctx.shedowColor="blue";
-        ctx.fillStyle ="red";
-        ctx.fillRect(100,120,100,80);
+        ctx.shadowBlur = 50;
+        ctx.shadowOffsetX=-40;
+        ctx.shadowOffsetY=-40;
+        ctx.shadowColor="blue";
+        ctx.fillStyle="red"
+        ctx.fillRect(100,120,120,100);
     </script>
 </body>
 </html>
