@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas line style</title>
+</head>
+<body>
+    <canvas id="mycanvas" width="500px" height="350px" style="border:1px solid #000"></canvas>
+    <script>
+        var canvas = document.getElementById("mycanvas");
+        var rock = canvas.getContext("2d");
+        rock.beginPath();
+        rock.lineWidth = 10 ;
+        // rock.lineCap="butt";
+        rock.lineCap = "round";
+        rock.miterLimit=5;
+        rock.moveTo(20,20);
+        rock.lineTo(100,50);
+        // rock.lineTo(20,100);
+        rock.stroke();
+
+        // rock.lineWidth=10;
+        // rock.strokeRect(100,80,80,100);
+    </script>
+</body>
+</html>
